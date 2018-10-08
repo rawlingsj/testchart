@@ -1,7 +1,7 @@
-CHART_REPO := https://chartmuseum.jx.cd.jenkins-x.io
+CHART_REPO := https://chartmuseum:8080
 NAME := testchart
 OS := $(shell uname)
-VERSION := 0.0.5
+VERSION := 0.0.5kc get 
 
 build: clean
 	helm dependency build
