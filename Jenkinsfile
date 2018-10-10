@@ -6,6 +6,7 @@ pipeline {
           branch 'PR-*'
         }
         steps {
+	  sh 'env | sort'
           echo "in a PR"
         }
       }
@@ -14,6 +15,7 @@ pipeline {
           branch 'master'
         }
         steps {
+          sh 'env | sort'
           echo "in master"
         }
       }
